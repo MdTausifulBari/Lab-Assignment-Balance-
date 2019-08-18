@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1566141445 source:c:\users\bari\desktop\all in one\c++ code\assignment 01\balance(bandhoni)\main.cpp
+	"stacktype.cpp"
+	<iostream>
+	<string>
+	<cstdio>
+
+1566134789 source:c:\users\bari\desktop\all in one\c++ code\assignment 01\balance(bandhoni)\stacktype.cpp
+	"stacktype.h"
+	<iostream>
+
+1566134646 c:\users\bari\desktop\all in one\c++ code\assignment 01\balance(bandhoni)\stacktype.h
+
+1566134789 c:\users\bari\desktop\all in one\c++ code\assignment 01\balance(bandhoni)\stacktype.cpp
+	"stacktype.h"
+	<iostream>
+
