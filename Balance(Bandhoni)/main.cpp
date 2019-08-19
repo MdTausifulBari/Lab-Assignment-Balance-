@@ -38,14 +38,14 @@ int main()
             {
                 if(s1.Top() == '{')
                 {
-                    s1.Top();
+                    s1.Pop();
                     s2.Push('}');
                     s2.Push(s[i]);
                     k = k + 2;
                 }
                 else
                 {
-                    s1.Top();
+                    s1.Pop();
                     s2.Push(']');
                     s2.Push(s[i]);
                     k = k + 2;
@@ -64,14 +64,14 @@ int main()
             {
                 if(s1.Top() == '(')
                 {
-                    s1.Top();
+                    s1.Pop();
                     s2.Push(')');
                     s2.Push(s[i]);
                     k = k + 2;
                 }
                 else
                 {
-                    s1.Top();
+                    s1.Pop();
                     s2.Push(']');
                     s2.Push(s[i]);
                     k = k + 2;
@@ -90,14 +90,14 @@ int main()
             {
                 if(s1.Top() == '(')
                 {
-                    s1.Top();
+                    s1.Pop();
                     s2.Push(')');
                     s2.Push(s[i]);
                     k = k + 2;
                 }
                 else
                 {
-                    s1.Top();
+                    s1.Pop();
                     s2.Push('}');
                     s2.Push(s[i]);
                     k = k + 2;
