@@ -16,9 +16,6 @@ int main()
     int len = s.size();
     cout << "Length of String: " << len << endl;
 
-//    s1.Push(s[0]);
-//    s2.Push(s[0]);
-    //i++;
     int k = 0;
 
     while(len != i)
@@ -39,20 +36,16 @@ int main()
             }
             else
             {
-                if(s1.Top() == '(')
+                if(s1.Top() == '{')
                 {
-                    s2.Push(')');
-                    s2.Push(s[i]);
-                    k = k + 2;
-                }
-                else if(s1.Top() == '{')
-                {
+                    s1.Top();
                     s2.Push('}');
                     s2.Push(s[i]);
                     k = k + 2;
                 }
                 else
                 {
+                    s1.Top();
                     s2.Push(']');
                     s2.Push(s[i]);
                     k = k + 2;
@@ -71,18 +64,14 @@ int main()
             {
                 if(s1.Top() == '(')
                 {
+                    s1.Top();
                     s2.Push(')');
-                    s2.Push(s[i]);
-                    k = k + 2;
-                }
-                else if(s1.Top() == '{')
-                {
-                    s2.Push('}');
                     s2.Push(s[i]);
                     k = k + 2;
                 }
                 else
                 {
+                    s1.Top();
                     s2.Push(']');
                     s2.Push(s[i]);
                     k = k + 2;
@@ -101,22 +90,19 @@ int main()
             {
                 if(s1.Top() == '(')
                 {
+                    s1.Top();
                     s2.Push(')');
-                    s2.Push(s[i]);
-                    k = k + 2;
-                }
-                else if(s1.Top() == '{')
-                {
-                    s2.Push('}');
                     s2.Push(s[i]);
                     k = k + 2;
                 }
                 else
                 {
-                    s2.Push(']');
+                    s1.Top();
+                    s2.Push('}');
                     s2.Push(s[i]);
                     k = k + 2;
                 }
+
             }
         }
         i++;
@@ -124,21 +110,12 @@ int main()
     cout << "Size of s2: " << k << endl;
 
 
-    while(k != 0)
-    {
-        s2.Pop();
-        cout << s2.Top();
-        s2.Pop();
-        k--;
-    }
+//    while(!s2.IsEmpty())
+//    {
+//        cout << s2.Top();
+//        s2.Pop();
+//        k--;
+//    }
 
-//        cout << s2.Top();
-//        s2.Pop();
-//        cout << s2.Top();
-//        s2.Pop();
-//        cout << s2.Top();
-//        s2.Pop();
-//        cout << s2.Top();
-//        s2.Pop();
     return 0;
 }
